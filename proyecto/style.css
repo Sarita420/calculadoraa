@@ -1,0 +1,210 @@
+ @charset "utf-8";
+        @import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+        [class*="fontawesome-"]:before {
+          font-family: 'FontAwesome', sans-serif;
+        }
+
+        body {
+          background: white;
+          color: white;
+          font: 87.5%/1.5em 'Open Sans', sans-serif;
+          margin: 0;
+        }
+
+        p {
+          line-height: 1.5em;
+        }
+
+        after { clear: both; }
+
+        .login {
+          margin: 50px auto;
+          width: 320px;
+        }
+
+        .login form {
+          margin: auto;
+          padding: 22px 22px 22px 22px;
+          width: 100%;
+          border-radius: 5px;
+          background: #282e33;
+          border-top: 3px solid #434a52;
+          border-bottom: 3px solid #434a52;
+        }
+
+        .login form span {
+          background-color: #363b41;
+          border-radius: 3px 0px 0px 3px;
+          border-right: 3px solid #434a52;
+          color: #606468;
+          display: block;
+          float: left;
+          line-height: 50px;
+          text-align: center;
+          width: 50px;
+          height: 50px;
+        }
+
+        .login form input[type="email"] {
+          background-color: #3b4148;
+          border-radius: 0px 3px 3px 0px;
+          color: #a9a9a9;
+          margin-bottom: 1em;
+          padding: 0 16px;
+          width: 90%;
+          height: 50px;
+        }
+
+        .login form input[type="password"] {
+          background-color: #3b4148;
+          border-radius: 0px 3px 3px 0px;
+          color: #a9a9a9;
+          margin-bottom: 1em;
+          padding: 0 16px;
+          width: 90%;
+          height: 50px;
+        }
+
+        .login form input[type="submit"] {
+          background: #b5cd60;
+          border: 0;
+          width: 100%;
+          height: 40px;
+          border-radius: 3px;
+          color: white;
+          cursor: pointer;
+          transition: background 0.3s ease-in-out;
+        }
+        #login form input[type="submit"]:hover {
+          background: #16aa56;
+        }
+
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial';
+  margin: 0;
+  padding: 0px;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  color: rgb(11, 12, 12);
+  border-style: groove;
+  border-width: 20px;
+  border-color: #1d96cf;
+  overflow-y: auto;
+}
+
+h1 {
+  margin-bottom: 50px;
+}
+
+p{
+  font-size: 50px;
+}
+
+#calculator {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input {
+  margin: 10px;
+  padding: 20px;
+  margin-right: 0px;
+  width: 220px;
+  font-size: 20px;
+  border: 5px solid #1ca2ca;
+}
+
+button{
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #1d96cf;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 25px;
+}
+
+#result {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+table{
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  border: 3px solid #1d96cf;
+  font-size: 23px;
+}
+
+th {
+  background-color: #1d96cf;
+  color: white;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #22abd8;
+}
+
+#loader {
+  position: fixed; /* Posiciona el loader en la pantalla */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0); /* Fondo oscuro */
+  z-index: 9999; /* Asegura que el loader estÃ© encima de otros elementos */
+  transition: opacity 0.5s ease; /* AnimaciÃ³n de transiciÃ³n para la opacidad */
+  opacity: 1; /* Opacidad inicial completa */
+}
+
+#loader img {
+  height: auto;
+  width: 80%;
+}
+
+#advice {
+  max-width: 900px;
+  margin-top: 30px;
+  margin: 0 auto;
+}
+
+
+@media screen and (min-width: 600px) {
+  .container {
+    border-width: 40px;
+  }
+  
+  #calculator {
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  #loader img {
+    height: 80%;
+    width: auto;
+  }
+}
